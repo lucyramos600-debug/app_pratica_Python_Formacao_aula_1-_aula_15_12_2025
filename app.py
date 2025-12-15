@@ -32,8 +32,8 @@ with st.sidebar:
              except FileNotFoundError:
                  return pd.DataFrame()
              
-          df = carregar_dados(dados)
-          st.table(df)
+        df = carregar_dados(dados)
+        st.table(df)
         
         else: 
             st.info("carregue um ficheiro Excel para começar")
