@@ -46,7 +46,7 @@ if menu == "Início":
         st.image("INE.png")
 
 if menu == "Widgets":
-    bt = st.button ("Dê um clique"):
+        bt = st.button ("Dê um clique"):
 
     if bt:
         st.info("Clicaste num botão acima!")
