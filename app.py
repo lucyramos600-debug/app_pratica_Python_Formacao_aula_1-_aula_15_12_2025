@@ -48,7 +48,7 @@ if menu == "Início":
 if menu == "Widgets":
         bt = st.button ("Dê um clique")
 
-    if bt
+        if bt:
         st.info("Clicaste num botão acima!")
 
         sd = st.slider ("Mova o ponto do slider!", min_value=25, \
