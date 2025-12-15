@@ -41,7 +41,7 @@ with st.sidebar:
  
 
 if menu == "Início":
-    whith st.expander ("**Sobre o Instituto Nacional de Estatística**"):
+    with st.expander ("**Sobre o Instituto Nacional de Estatística**"):
         st.white("Acesse o site www.ine.cv")
         st.image("INE.png")
 
