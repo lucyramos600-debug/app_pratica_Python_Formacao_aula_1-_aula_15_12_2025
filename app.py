@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import time 
 import re
 from datetime import date
-import openxl
+import openpyxl
 
 st.header("Introduzindo os elementos do Streamlit")
 
