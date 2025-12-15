@@ -24,7 +24,7 @@ menu = option_menu(menu_title= "Menu",
          type=["slsx", "xls"]
          )
      
-     if dado:
+     if dados:
          def carregar_dados(dados):
              try:
                  df = pd.read_excel(dados)
