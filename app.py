@@ -49,7 +49,7 @@ if menu == "Widgets":
         bt = st.button ("Dê um clique")
 
         if bt:
-        st.info("Clicaste num botão acima!")
+          st.info("Clicaste num botão acima!")
 
         sd = st.slider ("Mova o ponto do slider!", min_value=25, \
                         max_value=35, value=30, step=1
