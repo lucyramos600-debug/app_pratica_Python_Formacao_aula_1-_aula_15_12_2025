@@ -17,24 +17,23 @@ menu = option_menu(menu_title= "Menu",
                        orientation= "horizontal"
         )
 with st.sidebar:
-     st.success("**UPLOAD DE DADOS**")
-     
-     dados = st.file_uploader(
-         "Carregue...",
-         type=["slsx", "xls"]
-         )
-     
-     if dados:
-         def carregar_dados(dados):
-             try:
-                 df = pd.read_excel(dados)
-                 return df
-             except FileNotFoundError:
-                 return pd.DataFrame()
-             
+    st.success("**UPLOAD DE DADOS**")
+
+    dados = st.file_uploader(
+        "Carregue...",
+        type=["xlsx", "xls"]
+    )
+
+    def carregar_dados(dados):
+        try:
+            df = pd.read_excel(dados)
+            return df
+        except FileNotFoundError:
+            return pd.DataFrame()
+
+    if dados is not None:
         df = carregar_dados(dados)
         st.table(df)
-        
-        else: 
-            st.info("carregue um ficheiro Excel para começar")
+    else:
+        st.info("Carregue um ficheiro Excel para começar")
           
