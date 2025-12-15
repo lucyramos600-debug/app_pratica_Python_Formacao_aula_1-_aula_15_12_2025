@@ -3,3 +3,4 @@ matplotlib
 pandas
 streamlit_option_menu
 numpy
+openpy.xl
