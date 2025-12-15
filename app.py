@@ -44,6 +44,7 @@ if menu == "Início":
     with st.expander ("**Sobre o Instituto Nacional de Estatística**"):
         st.white("Acesse o site www.ine.cv")
         st.image("INE.png")
+        st.markdown("[Acesse o site www.ine.cv](https://www.ine.cv)")
 
 if menu == "Widgets":
     bt = st.button("Dê um clique")
