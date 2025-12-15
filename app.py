@@ -1,5 +1,11 @@
 import streamlit as st
 
+
+
+
+
+
+
 st.header("Introduzindo os elementos do Streamlit")
 
 menu = option_menu(menu_title= "Menu",
